@@ -34,9 +34,16 @@ for(let i = 0; i < arrayOfNumbers.length; i++) {
  * @returns number the count of even numbers
  */
 function countEvenNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+    let evenNumbers = []
+  
+  for (let i = 0; i < arrayOfNumbers.length; i++)   { 
+    if(arrayOfNumbers[i] % 2 === 0) {
+      evenNumbers.push(arrayOfNumbers[i])
+    }
+  }
+  return evenNumbers.length;
 }
-// assignment.countEvenNumbers = countEvenNumbers;
+ assignment.countEvenNumbers = countEvenNumbers;
 
 /**
  * Challenge - 3
